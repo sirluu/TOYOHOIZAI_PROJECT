@@ -2,6 +2,8 @@
 const express = require("express");
 //Filepath import
 const authRouter = require("./auth");
+const supplierRouter = require("./supplier");
+
 //Declaration
 const indexRouter = express.Router();
 
@@ -9,6 +11,7 @@ const indexRouter = express.Router();
 //PRIVATE ROUTE
 //PUBLIC ROUTE OR PRIVATE ROUTE
 indexRouter.use("/auth", authRouter);
+indexRouter.use("/supplier", supplierRouter);
 
 //Export
 module.exports = indexRouter;
