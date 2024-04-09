@@ -10,19 +10,19 @@ const authModel = {
       const checkUsername = "SELECT username FROM users WHERE username=?";
       dbConnect.query(checkUsername, [username], (err, data) => {
         if (err) {
-          reject({ msg: "Something is wrong" });
+          reject({ msg: "Something is wrong 1" });
         } else if (data.length) {
           reject({ msg: "Username already registered" });
         } else {
           //DO THIS IF USERNAME IS NOT ALREADY
           bycrypt.genSalt(10, (err, salt) => {
             if (err) {
-              reject({ msg: "Something is wrong" });
+              reject({ msg: "Something is wrong 2" });
             }
             const { password } = body;
             bycrypt.hash(password, salt, (err, hashedPassword) => {
               if (err) {
-                reject({ msg: "Something is wrong" });
+                reject({ msg: "Something is wrong 3" });
               }
               console.log(hashedPassword);
               const newBody = {
@@ -46,10 +46,10 @@ const authModel = {
   },
   login: (body) => {
     return new Promise((resolve, reject) => {
-      const { username, level_id } = body;
+      const { username} = body;
       const loginQuery =
-        "SELECT user_id, name, username, password, level_id FROM users WHERE username=? AND level_id=?";
-      dbConnect.query(loginQuery, [username, level_id], (err, data) => {
+        "SELECT user_id, name, username, password, role_id FROM users WHERE username=?";
+      dbConnect.query(loginQuery, [username], (err, data) => {
         // dbConnect.query(loginQuery, body.username, (err, data) => {
         if (err) {
           reject({ msg: "Something is wrong" });
@@ -59,24 +59,26 @@ const authModel = {
           bycrypt.compare(body.password, data[0].password, (err, result) => {
             if (result) {
               const { username } = body;
-              const { user_id, name, level_id } = data[0];
+              const { user_id, name, role_id } = data[0];
               const payload = {
                 username,
-                level_id,
+                role_id,
               };
               //CHECK LEVEL USER (SUPERVISOR||CASHIER)
               let secretKey;
-              if (level_id == 1) {
+              if (role_id == 1) {
                 secretKey = process.env.SECRET_KEY_ADMIN;
-              } else {
+              } else if (role_id == 2) {
                 secretKey = process.env.SECRET_KEY_USER;
+              } else {
+                secretKey = null;
               }
               //CREATE TOKEN
               const token = jwt.sign(payload, secretKey, {
                 expiresIn: "10h",
               });
               const msg = "Login Succes";
-              resolve({ msg, user_id, name, level_id, token });
+              resolve({ msg, user_id, name, role_id, token });
             }
             if (!result) {
               reject({ msg: "Wrong Password" });
