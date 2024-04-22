@@ -18,10 +18,10 @@ import AgeConfirmed from "./components/AgeConfirmed";
 
 function App() {
   return (
-    <div className="App">
-      <ScrollToTop />
+    <div className="App111">
+      {/* <ScrollToTop />
       <AgeConfirmed />
-      <TopNavigation />
+      <TopNavigation /> */}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/search" element={<SearchPage />} />

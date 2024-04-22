@@ -6,12 +6,13 @@
 
 import { initReactI18next } from "react-i18next";
 import i18next from "i18next";
+import i18nextBe from 'i18next-http-backend';
 
 // import json for language copy from 📁 ./lng/
 import en from "./lng/en.json";
 import da from "./lng/da.json";
 
-i18next.use(initReactI18next).init({
+i18next.use(i18nextBe).use(initReactI18next).init({
     resources: {
         
         en: {
@@ -22,9 +23,9 @@ i18next.use(initReactI18next).init({
             translation: da,
         }
     },
-
+    fallbackLng: 'en',
     // 🌐 get language from local storage, so it's cached when user reloads site -> better UX
-    lng: localStorage.getItem("lng") || "da",
+    lng: localStorage.getItem("lng") || "en",
 });
 
 export default i18next;
