@@ -1,0 +1,298 @@
+{
+  "topnav": {
+    "selectlng": "Select your language",
+    "searchTitle": "Search",
+    "likesTitle": "Your saved recipes",
+    "profileTitle": "Profile",
+    "recipeTitle": "Recipe",
+    "eventsTitle": "Events",
+    "articleTitle": "Article",
+    "homeTitle": "Home",
+    "cocktailTitle": "Cocktails",
+    "likesNavTitle": "Saved Recipes",
+    "profileNavTitle": "Profile"
+  },
+  "footer": {
+    "selectlng": "Vælg dit sprog",
+    "contact": {
+      "title": "Contact"
+    },
+    "sitemap": {
+      "title": "Sitemap",
+      "searchTitle": "Search",
+      "profileTitle": "Profile",
+      "homeTitle": "Home",
+      "likesNavTitle": "Saved Recipes"
+    },
+    "bottomTitle": "Made with love from"
+  },
+  "typewriter": {
+    "girlfriend": "your girlfriend",
+    "dog": "your dog",
+    "carpenter": "your carpenter",
+    "postman": "the mailman",
+    "friend": "your friend",
+    "grandpa": "your grandpa",
+    "college": "your college",
+    "impress": "Impress",
+    "bottomText": "with organic, easy and delicious cocktails."
+  },
+  "bottomnav": {
+    "home": "Home",
+    "cocktails": "Cocktails",
+    "favourites": "Saved",
+    "profile": "Profile"
+  },
+    "ageModal": {
+    "confirm": "Confirm",
+    "dontConfirm": "Leave"
+  },
+  "homepage": {
+    "hello": "The language is set to English",
+    "title": "Be your own bartender",
+    "featuredCarousel": {
+      "title": "Popular recipes",
+      "btnText": "See all"
+    },
+    "EventCarousel": {
+      "title": "Drinks for events"
+    },
+    "newyearsCarousel": {
+      "title": "For your New Year's"
+    },
+    "christmasCarousel": {
+      "title": "Christmas Wonders"
+    },
+    "partyCarousel": {
+      "title": "Get the party started"
+    },
+    "hero": {
+      "titleBefore": "Find the",
+      "titleUnderline": "perfect",
+      "titleEnd": "cocktail for the perfect moment.",
+      "descriptionStart": "Be your own bartender.",
+      "descriptionEnd": "We have collected the best recipes with quality liqour. Organic, easy and delicious.",
+      "btnMain": "Find recipes",
+      "btnSecondary": "Get inspired"
+    }
+  },
+  "searchpage": {
+    "title": "Find the right cocktail",
+    "body": "Search or filter to find the perfect recipe for the perfect moment. See below.",
+    "searchPlaceholder": "Search for recipes",
+    "list": "List",
+    "grid": "Grid",
+    "filter": "Filter",
+    "resultsText": "results for",
+    "resultsEmptyStateTop": "Sorry, we couldn't find any results in this category 😥",
+    "resultsEmptyStateBottom": "Try searching again",
+    "filterModalResetBtn": "Reset",
+    "filterModalApplyBtn": "Apply"
+  },
+    "competition":{
+    "firstdrink":{
+      "title": "Sour Bomb",
+      "body":"With this drink, you can be sure to wake up your guests",
+      "tagone":"Sour",
+      "tagtwo":"Sweet"
+    },
+    "seconddrink":{
+      "title": "Christmas Elf",
+      "body":"Get people in Christmas spirit with a fresh and sweet drink",
+      "tagone":"Sweet",
+      "tagtwo":"Fresh"
+    },
+    "thirddrink":{
+      "title": "Christmas Machine",
+      "body":"Go on a wild and adventurous Christmas adventure",
+      "tagone":"Spicy",
+      "tagtwo":"Strong"
+    },
+     "fourthdrink":{
+      "title": "Risalamande",
+      "body":"Finally, it's Christmas again",
+      "tagone":"Sweet",
+      "tagtwo":"Spicy"
+    },
+     "fifthdrink": {
+      "title": "Pineapple mojito",
+      "body":"Easy and refreshing pineapple mojito, perfect for a hot summer day",
+      "tagone":"Sweet",
+      "tagtwo":"Tropical"
+    },
+    "homePage": {
+      "title": "Win the ",
+      "second": "kit",
+      "third": " that makes your party a hit!",
+      "subTitle": "Julens cocktail er landet. Lav din egen cocktail og konkurrér om fede præmier."
+    }
+  },
+  "likespage": {
+    "title": "Your saved recipes",
+    "subtitle": "Your saved cocktails",
+    "body": "See your saved cocktails and create a new category of drinks for your next event",
+    "emptyStateTxt": "You haven't saved any cocktails yet 😥",
+    "emptyStateTxtBottom": "Explore the app and find the perfect cocktail for the perfect moment.",
+    "login": {
+      "title": "Login to save <span>your</span> cocktails",
+      "body": "Create a user to save cocktails. It is free and takes 1 minute. Create a taste profile, get exclusive offers, save cocktails and much more",
+      "mainbtn": "Login"
+    },
+    "categories": {
+      "all": "All",
+      "new": "Add category"
+    }
+  },
+  "profilepage": {
+    "title": "Your profile",
+    "saved": "Saved",
+    "savedBottom": "Recipes",
+    "tasteprofile": "Tasteprofile",
+    "tasteprofileBottom": "Cocktails",
+    "createdAt": "Created",
+    "createdAtBottom": "Days ago",
+    "tasteProfileTitle": "Your taste profile",
+    "latestAdded": "Taste profile",
+    "latestAddedBtn": "See all",
+    "yourCollections": "Recently saved",
+    "yourCollectionsBtn": "See all",
+    "signOutBtn": "Sign out",
+    "readMoreBtn": "We have created a flavor profile based on the cocktails you have added.",
+    "tags": {
+      "taste1": "Tropical",
+      "taste2": "Sweet",
+      "taste3": "Fresh",
+      "taste4": "Bitter"
+    },
+    "login": {
+      "title": "Unlock for more <span>free</span> benefits of the app",
+      "body": "Create a user to get a profile. It is free and takes 1 minute. Create a taste profile, get exclusive offers, save cocktails and much more.",
+      "mainbtn": "Login"
+    },
+    "likesEmptyState": "You have no saved cocktails yet 😥",
+    "showMoreBtn": "Show more",
+    "showLessBtn": "Show less"
+  },
+  "signin": {
+    "signInButtonGoogle": "Login",
+    "signInButtonFacebook": "Continue with Facebook",
+    "successToastMsg": "You have logged in! 🍹",
+    "logoutToastMsg": "You have logged out. We will miss you 😥"
+  },
+  "cocktailPage": {
+    "recipeTitle": "Step by step guide",
+    "carouselTitle": "More like this cocktail",
+    "carouselTitle2": "Other recipes with",
+    "addflavorBtn": "Add to flavor profile",
+    "copyBtnToolTip": "Click here to copy link to your clipboard 🍸",
+    "copyBtnText": "Copy link",
+    "copyModalTitle": "Share recipe with friends and family",
+    "alert": "Link is now copied ✨",
+    "bookmarkToast": "You have saved this cocktail 🍹",
+    "saveBtnWide": "Save cocktail"
+  },
+  "spinAnimation": {
+    "title": "Loading"
+  },
+  "categories": {
+    "popular": "Popular",
+    "welcome": "Apeterif",
+    "dinner": "Dinner",
+    "hygge": "Hygge",
+    "party": "Party",
+    "romance": "Romance",
+    "relaxing": "Relaxing",
+    "all": "All",
+    "newyears": "New Year's",
+    "christmas": "Christmas"
+  },
+  "filters": {
+    "titles": {
+      "events": "Events",
+      "themes": "Themes",
+      "time": "Time",
+      "taste": "Taste",
+      "liqour": "Liqour"
+    },
+    "taste": {
+      "fruity": "Fruity",
+      "sweet": "Sweet",
+      "sour": "Sour",
+      "fresh": "Fresh",
+      "strong": "Strong",
+      "bitter": "Bitter",
+      "tropic": "Tropic",
+      "spicy": "Spicy",
+      "salty": "Salty",
+      "dry": "Dry"
+    },
+    "ocassion": {
+      "summer": "Summer",
+      "wedding": "Wedding",
+      "newyears": "New Year's",
+      "birthday": "Birthday",
+      "studentparty": "Studentparty",
+      "easter": "Easter",
+      "christmas": "Christmas",
+      "reception": "Reception",
+      "weekend": "Weekend"
+    },
+    "theme": {
+      "party": "Party",
+      "hygge": "Hygge",
+      "dinner": "Dinner",
+      "romance": "Romance",
+      "apeterif": "Apeterif",
+      "relaxing": "Relaxing"
+    },
+    "liqourType": {
+      "snaps": "Snaps",
+      "vodka": "Vodka",
+      "gin": "Gin",
+      "akvavit": "Akvavit",
+      "rum": "Rum",
+      "sevablødda": "Sevablødda"
+    }
+  },
+  "drinkCard": {
+    "btnText": "Make cocktailcard",
+    "pdfName": "OnTheRocks-CocktailCard.pdf",
+    "title": "On The Rocks Cocktails",
+    "subtitle": "By Bornholm Spirits"
+  },
+  "tasteProfile": {
+    "title": "Add to your taste profile",
+    "subTitle": "Add the cocktail to your taste profile and get an instant overview over your favorite cocktails and tastes. Add og delete the tastes below.",
+    "bottomText": "Help us evaluate the tastebalance and help us improve our recipes.",
+    "submitBtn": "Add to tasteprofile",
+    "translations": {
+      "frugtig": "fruity",
+      "sød": "Sweet",
+      "syrlig": "Sour",
+      "frisk": "Fresh",
+      "stærk": "Strong",
+      "bitter": "Bitter",
+      "tropisk": "Tropic",
+      "krydret": "Spicy",
+      "salt": "Salty",
+      "tør": "Dry"
+    }
+  },
+  "articleCard": {
+    "title": "Explore our cocktails",
+    "teaser": "Make a cocktail card with your favorites and get ready for New Year's and Christmas!"
+  },
+  "readMoreBtn": {
+    "title": "Read more"
+  },
+  "aboutArticle": {
+    "tag": "Who are we?"
+  },
+  "addToTasteToast": {
+    "title": "Cocktail has been added to your taste profile 🍹"
+  },
+  "tasteProfileDisplay": {
+    "emptyStateTxt": "Explore our cocktails and add your favorites to your taste profile 🍹"
+  },
+  "goBackBtn": "Go back"
+}

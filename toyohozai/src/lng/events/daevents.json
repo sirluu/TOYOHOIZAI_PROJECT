@@ -1,0 +1,190 @@
+[
+    {
+        "id": "nytårsaften",
+        "headerImage": "https://firebasestorage.googleapis.com/v0/b/on-the-rocks-app.appspot.com/o/newyears.webp?alt=media&token=19d3f2c4-e3ea-47de-b5da-d2ac899bad80",
+        "slug": "nytårsaften",
+        "category": "events",
+        "title": "Nytårsaften",
+        "subcategory": "guides",
+        "subcategoryTitle": "Tips og guides",
+        "body": "Nytårsaften er årets fest. og derfor har vi selvfølgelig fundet de helt perfekte drinks til jeres aften.",
+        "slider1": {
+            "title": "Til velkomsten",
+            "body": "Dine gæster kommer som regel på tom mave. Vælg en lættere drink, så i ikke bliver for fulde før i sætter jer til bords.",
+            "slidedata": {
+                "slug1": "vodka-martini",
+                "slug2": "nordic-pamola",
+                "slug3": "no3-tonic",
+                "slug4": "gin-fizz",
+                "slug5": "weekend-negroni"
+            }
+        },
+        "slider2": {
+            "title": "Til maden",
+            "body": "Det her er til dem som ikke drikker vin, eller som blot vil have en god sidevogn til maden.",
+            "slidedata": {
+                "slug1": "spicy-magarita",
+                "slug2": "dannebrog",
+                "slug3": "no3-tonic",
+                "slug4": "gin-hass",
+                "slug5": "french-75"
+            }
+        },
+        "slider3": {
+            "title": "Til festen",
+            "body": "Nu er festen for alvor skudt i gang, og her er den perfekte liste over drinks som alle kan lide. ",
+            "slidedata": {
+                "slug1": "nordic-passion",
+                "slug2": "nordic-pamola",
+                "slug3": "bramble",
+                "slug4": "flyver-sjus",
+                "slug5": "screw-driver"
+            }
+        },
+        "relatedEvents": {
+            "slug1": "juleaften",
+            "slug2": "julefrokost"
+        }
+    },
+    {
+        "id": "juleaften",
+        "headerImage": "https://firebasestorage.googleapis.com/v0/b/on-the-rocks-app.appspot.com/o/jul.webp?alt=media&token=ac5f1561-0f7f-4fe3-a64c-6b3ec51ac6fa",
+        "slug": "juleaften",
+        "category": "events",
+        "title": "Juleaften",
+        "subcategory": "guides",
+        "subcategoryTitle": "Tips og guides",
+        "body": "En aften, der for alvor handler om hyggen, familien og sammenhold - hvorfor ikke nyde det med en lækker cocktail? Om du sidder i sofaen og venter på fællessangen er ovre eller tager en svingom omkring træet, så har vi nedenfor samlet de bedste drinks til din aften.",
+        "slider1": {
+            "title": "Til hyggen",
+            "body": "I er spændte, gaver og masser af mad venter forude. Der skal hygges om det, og disse cocktails er lige hvad du har brug for.",
+            "slidedata": {
+                "slug1": "stormy-bornholmer",
+                "slug2": "kiev-mule",
+                "slug3": "havtorn-gogt",
+                "slug4": "gin-mojito",
+                "slug5": "golden-licorice"
+            }
+        },
+        "slider2": {
+            "title": "Til julemiddagen",
+            "body": "Masser af sovs og kærlighed - eller hvad end du er til. Her passer kraftige, krydrede cocktails med snaps perfekt til de mange smagsindtryk.",
+            "slidedata": {
+                "slug1": "frost-akva-sour",
+                "slug2": "nordic-negroni",
+                "slug3": "dannebrog",
+                "slug4": "red-copenhagen",
+                "slug5": "white-lady"
+            }
+        },
+        "slider3": {
+            "title": "Til risalamanden",
+            "body": "Fællessangen er ovre, pakkerne er åbnet og nu skal du for alvor hygge. Her er et par søde bud, der komplementerer risalamanden fantastisk godt.",
+            "slidedata": {
+                "slug1": "blooming-fig",
+                "slug2": "white-russian",
+                "slug3": "kongen-af-danmark",
+                "slug4": "frozen-havtorn-gogt",
+                "slug5": "red-pearl"
+            }
+        },
+        "relatedEvents": {
+            "slug1": "nytårsaften",
+            "slug2": "julefrokost"
+        }
+    },
+    {
+        "id": "julefrokost",
+        "headerImage": "https://firebasestorage.googleapis.com/v0/b/on-the-rocks-app.appspot.com/o/julefrokost1.webp?alt=media&token=4ff6cfc5-44d4-4e9a-a3d6-89bdebc08121",        
+        "slug": "julefrokost",
+        "category": "events",
+        "title": "Julefrokost",
+        "subcategory": "guides",
+        "subcategoryTitle": "Tips og guides",
+        "body": "Julefrokoster er den tid på året, hvor venner og familie samles. Vi har derfor samlet de bedste drinks til din julefrokost",
+        "slider1": {
+            "title": "Til silden",
+            "body": "Dine gæster er ankommet med det gode humør, silden er sat på bordet og lige netop de her drinks er perfekte til det.",
+            "slidedata": {
+                "slug1": "the-golden-age",
+                "slug2": "red-pearl",
+                "slug3": "st-germain-foam",
+                "slug4": "orientail-v",
+                "slug5": "diamond-snaps"
+            }
+        },
+        "slider2": {
+            "title": "Til pakkelegen",
+            "body": "Nu skal der stjæles pakker, og til det skal der selvfølgelig bruges nogle drinks til at holde tempoet oppe.",
+            "slidedata": {
+                "slug1": "spicy-magarita",
+                "slug2": "kiev-mule",
+                "slug3": "no3-tonic",
+                "slug4": "champagne-fizz",
+                "slug5": "green-vodka"
+            }
+        },
+        "slider3": {
+            "title": "Når du har fået lidt for meget",
+            "body": "Festen er i fuld sving, og du har brug for en opkvikkende drink, så her har vi samlet de perfekte drinks",
+            "slidedata": {
+                "slug1": "white-russian",
+                "slug2": "stormy-bornholmer",
+                "slug3": "espresso-martini",
+                "slug4": "flower-power",
+                "slug5": "havtorn-gogt"
+            }
+        },
+        "relatedEvents": {
+            "slug1": "juleaften",
+            "slug2": "nytår"
+        }
+    },
+    {
+        "id": "dagenderpaa",
+        "headerImage": "https://firebasestorage.googleapis.com/v0/b/on-the-rocks-app.appspot.com/o/confetti.webp?alt=media&token=d144f336-4b52-40b8-bab3-798ad2e303ce",        
+        "slug": "dagenderpaa",
+        "category": "events",
+        "title": "Dagen Derpå",
+        "subcategory": "guides",
+        "subcategoryTitle": "Tips og guides",
+        "body": "De fleste har hørt om reperationsbajeren, vi tager den lige et nøk op og præsenterer reperations-cocktaile!",
+        "slider1": {
+            "title": "Når du vågner",
+            "body": "Lige når du vågner skriger din krop helt sikker efter væske. Giv din krop det friske pust den har brug for med en læskende Screw Driver.",
+            "slidedata": {
+                "slug1": "screw-driver",
+                "slug2": "red-pearl",
+                "slug3": "st-germain-foam",
+                "slug4": "orientail-v",
+                "slug5": "diamond-snaps"
+            }
+        },
+        "slider2": {
+            "title": "Til oprydningen",
+            "body": "Nu starter alt det hårde og du har brug for alt tænkelig energi for at finde overskuddet til at støvsuge alle de mange konfetti-stykker op fra hele lejligheden (fordi i går var det verdens bedste idé at fyre tre konfetti-kanoner af).",
+            "slidedata": {
+                "slug1": "espresso-martini",
+                "slug2": "stormy-bornholmer",
+                "slug3": "espresso-martini",
+                "slug4": "flower-power",
+                "slug5": "havtorn-gogt"
+            }
+        },
+        "slider3": {
+            "title": "Til pizzaen",
+            "body": "Nu kan du endelig slappe af og med god samvittighed. Bestil den mest snaskede pizza du kan finde på Wolt, slå benene op og nyd en Stormy Bornholmer til maden.",
+            "slidedata": {
+                "slug1": "frost-akva-sour",
+                "slug2": "nordic-negroni",
+                "slug3": "dannebrog",
+                "slug4": "red-copenhagen",
+                "slug5": "white-lady"
+            }
+        },
+        "relatedEvents": {
+            "slug1": "juleaften",
+            "slug2": "nytår"
+        }
+    }
+]

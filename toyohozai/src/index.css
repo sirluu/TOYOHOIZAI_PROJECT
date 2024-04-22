@@ -1,0 +1,541 @@
+/* IMPORT TAILWIND */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;  
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "GT America Extended Regular", sans-serif;
+  text-rendering: optimizeLegibility;
+  background-color: #0c0c0c;
+  color: #f5f5f5;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+::selection {
+  background: #494949; /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+  background: #494949; /* WebKit/Blink Browsers */
+}
+
+/* ------------ FONT IMPORTS FOR TAILWIND - ADDED IN TAILWIND.CONFIG.JS */
+@import url("https://use.typekit.net/qas8tlj.css");
+
+@font-face {
+  font-family: "Neue Plak Extended Regular";
+  src: url("../src/assets/fonts/NeuePlakExtendedRegular.ttf");
+}
+
+@font-face {
+  font-family: "Neue Plak Extended SemiBold";
+  src: url("../src/assets/fonts/NeuePlakExtendedSemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Neue Plak Extended Bold";
+  src: url("../src/assets/fonts/NeuePlakExtendedBold.ttf");
+}
+
+@font-face {
+  font-family: "Neue Plak Extended Black";
+  src: url("../src/assets/fonts/NeuePlakExtendedBlack.ttf");
+}
+
+@font-face {
+  font-family: "GT America Extended Regular";
+  src: url("../src/assets/fonts/GT-AMERICA-EXTENDED-REGULAR.OTF");
+}
+
+@font-face {
+  font-family: "GT America Extended Bold";
+  src: url("../src/assets/fonts/GT-AMERICA-EXTENDED-BOLD.OTF");
+}
+
+@font-face {
+  font-family: "GT America Expanded Bold";
+  src: url("../src/assets/fonts/GT-AMERICA-EXTENDED-BOLD.OTF");
+}
+
+@font-face {
+  font-family: "GT America Extended Medium";
+  src: url("../src/assets/fonts/GT-AMERICA-EXTENDED-MEDIUM.OTF");
+}
+
+@font-face {
+  font-family: "GT America Extended Thin";
+  src: url("../src/assets/fonts/GT-AMERICA-EXTENDED-THIN.OTF");
+}
+
+@font-face {
+  font-family: "GT America Extended Light";
+  src: url("../src/assets/fonts/GT-AMERICA-EXTENDED-LIGHT.OTF");
+}
+
+@font-face {
+  font-family: "ITC Benguiat Medium";
+  src: url("../src/assets/fonts/ITCBenguiatMedium.ttf");
+}
+
+@font-face {
+  font-family: "ITC Benguiat Book";
+  src: url("../src/assets/fonts/ITCBenguiatBook.ttf");
+}
+
+@font-face {
+  font-family: "ITC Benguiat Bold";
+  src: url("../src/assets/fonts/ITCBenguiatBold.ttf");
+}
+
+/* active links styling */
+@keyframes clickBounce {
+  from {
+    scale: 1.05;
+  }
+  to {
+    scale: 1;
+  }
+}
+
+.active {
+  color: #ffe598;
+  animation-name: clickBounce;
+  animation-duration: 0.3s;
+}
+
+.active p {
+  color: #ffe598;
+}
+
+.active svg {
+  stroke-width: 1.8px;
+}
+
+/* SWIPER */
+.carouselSection {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.swiper-container p {
+  margin-bottom: 0px !important;
+}
+
+.featuredCards .swiper-slide {
+  /* Center slide text vertically */
+  display: flex;
+  min-height: 480px;
+  max-width: 80%;
+  color: white;
+  background-color: none !important;
+}
+
+.categorySlider .swiper-slide {
+  /* Center slide text vertically */
+  display: flex;
+  max-width: 30%;
+  min-width: 20%;
+  background-color: none !important;
+}
+
+.swiper-container {
+  width: 100%;
+}
+
+.smallCards .swiper-slide {
+  /* Center slide text vertically */
+  display: flex;
+  min-height: 250px;
+  max-width: 70%;
+  color: white;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  background-color: none !important;
+}
+
+.featuredProducts .swiper-slide {
+  /* Center slide text vertically */
+  display: flex;
+  min-height: 250px;
+  max-width: 70%;
+  color: white;
+  background-color: none !important;
+}
+
+.eventCards .swiper-slide {
+  /* Center slide text vertically */
+  display: flex;
+  min-height: 225px;
+  max-width: 70%;
+  color: white;
+  background-color: none !important;
+}
+
+.bigCard {
+  animation: fadeIn 0.4s ease;
+}
+
+/* ANIMATIONS */
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.fadeUpAnimation {
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.fadeInAnimation {
+  animation: fadeInSlow 0.4s ease;
+}
+
+@keyframes fadeInSlow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.slideIn {
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 2.5rem;
+  }
+}
+
+/* TYPEWRITER */
+.typewriter-text {
+  /* hide the text by default */
+  overflow: hidden;
+  white-space: nowrap;
+  /* animate the appearance of the text */
+  animation: typing 3s steps(30, end);
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* BOOKMARK ANIMATION */
+.bookmarkIcon:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease;
+}
+
+.bookmarkIcon {
+  transform: scale(1);
+  transition: 0.2s ease;
+}
+
+.bookmarkIcon:after {
+  transform: scale(1);
+  transition: 0.5s ease;
+}
+
+@keyframes bookMarkHover {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+  }
+}
+
+.video {
+  position: relative;
+  min-height: 40vh;
+  border-radius: 15px 50px 30px 5px;
+}
+
+.videovideo {
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+  border-radius: 0px 0px 40px 40px;
+}
+
+.textspan span {
+  color: #ffe598;
+  text-decoration: underline;
+}
+
+/* COMPETITION ANIMATION */
+.compAnim {
+  -webkit-animation: mover 3s infinite alternate;
+  animation: mover 4s infinite alternate;
+}
+
+.compAnim2 {
+  -webkit-animation: mover 3s infinite;
+  animation: mover 5s infinite alternate;
+}
+
+.compAnim3 {
+  -webkit-animation: mover 3s infinite alternate;
+  animation: mover 6s infinite alternate;
+}
+
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+/* LOGOUT TOAST - REACT TOASTIFY STYLING - TO OUR VISUAL IDENTITY */
+#logoutToast .Toastify__progress-bar-theme--dark {
+  background-color: #ffe598 !important;
+}
+
+/* SCROLL TO TOP BTN */
+.scrollToTop{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s ease-in;
+}
+
+.scrollToTop button{
+  display: none;
+}
+
+.scrollToTop svg{
+  height: 30px;
+}
+
+.scrollToTop button:hover{
+  background-color: white;
+  opacity: 0.8;
+  color: black;
+  transition: 0.3s ease;
+}
+
+.gsapAnim{
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+.gsapAnimDownUp{
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+.gsapAnimFade{
+  opacity: 0;
+}
+
+/* SEARCH INPUT FOR SEARCHPAGE ICON */
+
+/* 'sm': '640px' */
+@media (max-width: 640px) {
+  .videoHomepage {
+    display: none;
+  }
+  .videovideoHomepage {
+    display: none;
+  }
+
+  /* COCKTAILPAGE */
+  .featuredProducts .swiper-slide {
+    /* Center slide text vertically */
+    display: flex;
+    min-height: 180px;
+    max-width: 70%;
+    color: white;
+    background-color: none !important;
+  }
+
+}
+
+/* 'md': '768px', */
+@media (min-width: 641px) {
+  .videoHomepage {
+    display: none;
+  }
+  .videovideoHomepage {
+    display: none;
+  }
+}
+
+/* 'lg': '1024px', */
+@media (min-width: 1024px) {
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .swiper-container p {
+    margin-bottom: 0px !important;
+  }
+
+  .featuredCards .swiper-slide {
+    /* Center slide text vertically */
+    display: flex;
+    min-height: 350px;
+    max-width: 30%;
+    color: white;
+    background-color: none !important;
+  }
+
+  .categorySlider .swiper-slide {
+    /* Center slide text vertically */
+    display: flex;
+    max-width: 9%;
+    min-width: 2%;
+    background-color: none !important;
+  }
+
+  .swiper-container {
+    width: 100%;
+  }
+
+  .smallCards .swiper-slide {
+    /* Center slide text vertically */
+    display: flex;
+    min-height: 250px;
+    max-width: 25%;
+    color: white;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    background-color: white !important;
+  }
+
+  .eventCards .swiper-slide {
+    /* Center slide text vertically */
+    display: flex;
+    min-height: 225px;
+    max-width: 70%;
+    color: white;
+    background-color: white !important;
+  }
+
+  .videoHomepage {
+    display: block;
+    position: relative;
+    min-height: 50vh;
+    border-radius: 15px 50px 30px 5px;
+    z-index: -1000;
+  }
+
+  .videovideoHomepage {
+    display: block;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 0px 0px 40px 40px;
+  }
+
+  .scrollToTop button{
+    bottom: 0;
+    right: 0;
+    z-index: 999999999999;
+    position: fixed;
+    cursor: pointer;
+    margin: 2.5rem;
+    background-color: #525252;
+    border: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+    color: #FFE598;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 50%;
+    opacity: 1;
+    transition: 1s ease;
+  }
+  
+}
+
+/* 'xl': '1280px', */
+@media (min-width: 1280px) {
+  .featuredCards .swiper-slide {
+    /* Center slide text vertically */
+    display: flex;
+    min-height: 500px;
+    max-width: 30%;
+    color: white;
+    background-color: none !important;
+  }
+
+}
+
+/* '2xl': '1536px', */
+@media (min-width: 1536px) {
+  .featuredCards .swiper-slide {
+    min-height: 600px;
+  }
+}

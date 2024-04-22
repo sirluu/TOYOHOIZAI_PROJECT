@@ -1,0 +1,190 @@
+[
+    {
+        "id": "nytårsaften",
+        "headerImage": "https://firebasestorage.googleapis.com/v0/b/on-the-rocks-app.appspot.com/o/newyears.webp?alt=media&token=19d3f2c4-e3ea-47de-b5da-d2ac899bad80",
+        "slug": "nytårsaften",
+        "category": "events",
+        "title": "New Year's Eve",
+        "subcategory": "guides",
+        "subcategoryTitle": "Tips & guides",
+        "body": "New Year's Eve is the party of the year. And of course we have found the perfect drinks for your evening.",
+        "slider1": {
+            "title": "Best for predinner",
+            "body": "Our guests typically arrive on an empty stomach. Choose a lighter drink so that you don't get too drunk before sitting down to dinner.",
+            "slidedata": {
+                "slug1": "vodka-martini",
+                "slug2": "nordic-pamola",
+                "slug3": "no3-tonic",
+                "slug4": "gin-fizz",
+                "slug5": "weekend-negroni"
+            }
+        },
+        "slider2": {
+            "title": "For dinner",
+            "body": "This is for those who do not drink wine, or who simply want a good side dish for their food",
+            "slidedata": {
+                "slug1": "spicy-magarita",
+                "slug2": "dannebrog",
+                "slug3": "no3-tonic",
+                "slug4": "gin-hass",
+                "slug5": "french-75"
+            }
+        },
+        "slider3": {
+            "title": "Let´s party",
+            "body": "The party has officially kicked off and we've got a list of drinks that will make everyone at the party as happy as a clown with a balloon animal! ",
+            "slidedata": {
+                "slug1": "nordic-passion",
+                "slug2": "nordic-pamola",
+                "slug3": "bramble",
+                "slug4": "flyver-sjus",
+                "slug5": "screw-driver"
+            }
+        },
+        "relatedEvents": {
+            "slug1": "juleaften",
+            "slug2": "julefrokost"
+     }
+    },
+    {
+        "id": "juleaften",
+        "headerImage": "https://firebasestorage.googleapis.com/v0/b/on-the-rocks-app.appspot.com/o/jul.webp?alt=media&token=ac5f1561-0f7f-4fe3-a64c-6b3ec51ac6fa",
+        "slug": "juleaften",
+        "category": "events",
+        "title": "Christmas Eve",
+        "subcategory": "guides",
+        "subcategoryTitle": "Tips & guides",
+        "body": "An evening that is truly about hygge, family and togetherness - why not enjoy it with a delicious cocktail? Whether you are sitting on the couch waiting for the group singing to be over or taking a spin around the tree, below we have collected the best drinks for your evening",
+        "slider1": {
+            "title": "For the hygge",
+            "body": "You are excited, gifts and lots of food are waiting ahead. Coziness is needed, and these cocktails are just what you need to get started.",
+            "slidedata": {
+                "slug1": "stormy-bornholmer",
+                "slug2": "kiev-mule",
+                "slug3": "havtorn-gogt",
+                "slug4": "gin-mojito",
+                "slug5": "golden-licorice"
+            }
+        },
+        "slider2": {
+            "title": "For your dinner",
+            "body": "Plenty of gravy and love - or whatever you are into. Here, robust, spicy cocktails with snaps are perfect for the many flavors.",
+            "slidedata": {
+                "slug1": "frost-akva-sour",
+                "slug2": "nordic-negroni",
+                "slug3": "dannebrog",
+                "slug4": "red-copenhagen",
+                "slug5": "white-lady"
+            }
+        },
+        "slider3": {
+            "title": "For the risalamande",
+            "body": "You are stuffed, all the packages are opened and now the cozyness starts. A couple of sweet suggestions that complement sweet notes of the rice pudding fantasticly well.",
+            "slidedata": {
+                "slug1": "blooming-fig",
+                "slug2": "white-russian",
+                "slug3": "kongen-af-danmark",
+                "slug4": "frozen-havtorn-gogt",
+                "slug5": "red-pearl"
+            }
+        },
+        "relatedEvents": {
+            "slug1": "nytårsaften",
+            "slug2": "julefrokost"
+        }
+    },
+    {
+        "id": "julefrokost",
+        "headerImage": "https://firebasestorage.googleapis.com/v0/b/on-the-rocks-app.appspot.com/o/julefrokost1.webp?alt=media&token=4ff6cfc5-44d4-4e9a-a3d6-89bdebc08121",
+        "slug": "julefrokost",
+        "category": "events",
+        "title": "Julefrokost",
+        "subcategory": "guides",
+        "subcategoryTitle": "Tips & guides",
+        "body": "Christmas parties is the time of year when friends and family come together. We have therefore collected the best drinks for your christmas party.",
+        "slider1": {
+            "title": "For the herring",
+            "body": "Your guests have arrived in good spirits, the herring has been placed on the table and these drinks are perfect for it.",
+            "slidedata": {
+                "slug1": "the-golden-age",
+                "slug2": "red-pearl",
+                "slug3": "st-germain-foam",
+                "slug4": "orientail-v",
+                "slug5": "diamond-snaps"
+            }
+        },
+        "slider2": {
+            "title": "For the pakkeleg",
+            "body": "Now it's time to steal some packages, and of course drinks are needed to keep the pace up.",
+            "slidedata": {
+                "slug1": "spicy-magarita",
+                "slug2": "kiev-mule",
+                "slug3": "no3-tonic",
+                "slug4": "champagne-fizz",
+                "slug5": "green-vodka"
+            }
+        },
+        "slider3": {
+            "title": "When you have had a little too much",
+            "body": "The party is in full swing, and you need a pick-me-up drink, so here we have collected the perfect drinks.",
+            "slidedata": {
+                "slug1": "white-russian",
+                "slug2": "stormy-bornholmer",
+                "slug3": "espresso-martini",
+                "slug4": "flower-power",
+                "slug5": "havtorn-gogt"
+            }
+        },
+        "relatedEvents": {
+            "slug1": "juleaften",
+            "slug2": "nytår"
+        }
+    },
+    {
+        "id": "dagenderpaa",
+        "headerImage": "https://firebasestorage.googleapis.com/v0/b/on-the-rocks-app.appspot.com/o/confetti.webp?alt=media&token=d144f336-4b52-40b8-bab3-798ad2e303ce",        
+        "slug": "dagenderpaa",
+        "category": "events",
+        "title": "The morning after",
+        "subcategory": "guides",
+        "subcategoryTitle": "Tips og guides",
+        "body": "Most have heard about the reperation beer, we have taken it to the next level and present to you the reperation cocktail.",
+        "slider1": {
+            "title": "When you wake up",
+            "body": "Right when ypu wake up your body is propably screaming for fluids. Give it what it wants with a mouth-watering Screw Driver.",
+            "slidedata": {
+                "slug1": "screw-driver",
+                "slug2": "red-pearl",
+                "slug3": "st-germain-foam",
+                "slug4": "orientail-v",
+                "slug5": "diamond-snaps"
+            }
+        },
+        "slider2": {
+            "title": "For the clean-up",
+            "body": "Now the hard work begins and you will need all the energi you can get to be able to find the energy to vacuum all the confetti off of the floor (Because last night you thought it was a great idea to fire up three confetti-canons).",
+            "slidedata": {
+                "slug1": "espresso-martini",
+                "slug2": "stormy-bornholmer",
+                "slug3": "espresso-martini",
+                "slug4": "flower-power",
+                "slug5": "havtorn-gogt"
+            }
+        },
+        "slider3": {
+            "title": "For the Pizza",
+            "body": "And then you can finally rest og with good conscience. Order the most greasy pizza you can find on wolt, unwind and enjoy a Stormy Bornholmer.",
+            "slidedata": {
+                "slug1": "frost-akva-sour",
+                "slug2": "nordic-negroni",
+                "slug3": "dannebrog",
+                "slug4": "red-copenhagen",
+                "slug5": "white-lady"
+            }
+        },
+        "relatedEvents": {
+            "slug1": "juleaften",
+            "slug2": "nytår"
+        }
+    }
+]

@@ -1,0 +1,299 @@
+{
+  "topnav": {
+    "selectlng": "Vælg dit sprog",
+    "searchTitle": "Søg",
+    "likesTitle": "Dine gemte opskrifter",
+    "profileTitle": "Profil",
+    "recipeTitle": "Opskrift",
+    "eventsTitle": "Begivenheder",
+    "articleTitle": "Artikel",
+    "homeTitle": "Hjem",
+    "cocktailTitle": "Cocktails",
+    "likesNavTitle": "Gemte opskrifter",
+    "profileNavTitle": "Profil",
+    "populære": "Mest populære"
+  },
+  "footer": {
+    "selectlng": "Vælg dit sprog",
+    "contact": {
+      "title": "Kontakt"
+    },
+    "sitemap": {
+      "title": "Sitemap",
+      "searchTitle": "Søg",
+      "profileTitle": "Profil",
+      "homeTitle": "Hjem",
+      "likesNavTitle": "Gemte opskrifter"
+    },
+    "bottomTitle": "Lavet med kærlighed fra"
+  },
+  "typewriter": {
+    "girlfriend": "din kæreste",
+    "dog": "din hund",
+    "carpenter": "din håndværker",
+    "postman": "dit postbud",
+    "friend": "din ven",
+    "grandpa": "din morfar",
+    "college": "din kollega",
+    "impress": "Imponer",
+    "bottomText": "med økologiske, nemme og lækre cocktails."
+  },
+  "bottomnav": {
+    "home": "Hjem",
+    "cocktails": "Cocktails",
+    "favourites": "Gemt",
+    "profile": "Profil"
+  },
+  "ageModal": {
+    "confirm": "Bekræft",
+    "dontConfirm": "Forlad"
+  },
+  "homepage": {
+    "hello": "Sproget er nu sat til dansk",
+    "title": "Vær din egen bartender",
+    "featuredCarousel": {
+      "title": "Mest populære",
+      "btnText": "Se alle"
+    },
+    "EventCarousel": {
+      "title": "Drinks til begivenheder"
+    },
+    "newyearsCarousel": {
+      "title": "Til din nytårsaften"
+    },
+    "christmasCarousel": {
+      "title": "Til din juletid"
+    },
+    "partyCarousel": {
+      "title": "Når festen kører"
+    },
+    "hero": {
+      "titleBefore": "Find den",
+      "titleUnderline": "perfekte",
+      "titleEnd": "cocktail til det perfekte tidspunkt.",
+      "descriptionStart": "Bliv din egen bartender.",
+      "descriptionEnd": "Vi har samlet de bedste opskrifter med kvalitetsspiritus. Økologisk, nemt og super lækkert.",
+      "btnMain": "Find opskrifter",
+      "btnSecondary": "Udforsk siden"
+    }
+  },
+  "searchpage": {
+    "title": "Find den rigtige cocktail",
+    "body": "Søg eller filtrér efter og find den helt rigtige opskrift til det helt rigtige tidspunkt. Se nedenfor.",
+    "searchPlaceholder": "Søg efter opskrifter",
+    "list": "Liste",
+    "grid": "Gitter",
+    "filter": "Filter",
+    "resultsText": "resultater for",
+    "resultsEmptyStateTop": "Der blev ikke fundet nogle cocktails i denne kategori 😥",
+    "resultsEmptyStateBottom": "Prøv at lave en ny søgning",
+    "filterModalResetBtn": "Nulstil",
+    "filterModalApplyBtn": "Anvend"
+  },
+  "likespage": {
+    "title": "Dine gemte opskrifter",
+    "subtitle": "Dine gemte cocktails",
+    "body": "Se dine gemte cocktails, og opret en ny kategori med drinks til din næste begivenhed",
+    "emptyStateTxt": "Du har ingen gemte cocktails 😥",
+    "emptyStateTxtBottom": "Udforsk appen og find den perfekte cocktail til det perfekte tidspunkt.",
+    "login": {
+      "title": "Log ind for at <span>gemme</span> dine cocktails",
+      "body": "Opret en bruger for at gemme cocktails. Det er gratis og tager 1 minut. Opret smagsprofil, få ekslusive tilbud, gem cocktails og meget mere.",
+      "mainbtn": "Log ind"
+    },
+    "categories": {
+      "all": "Alle",
+      "new": "Ny kategori"
+    }
+  },
+  "profilepage": {
+    "title": "Din profil",
+    "saved": "Gemt",
+    "savedBottom": "Opskrifter",
+    "tasteprofile": "Smagsprofil",
+    "tasteprofileBottom": "Cocktails",
+    "createdAt": "Oprettet",
+    "createdAtBottom": "Dage siden",
+    "tasteProfileTitle": "Din smagsprofil",
+    "latestAdded": "Smagsprofil",
+    "latestAddedBtn": "Se alle",
+    "yourCollections": "Sidst gemte",
+    "yourCollectionsBtn": "Se alle",
+    "signOutBtn": "Log ud",
+    "readMoreBtn": "Vi har lavet en smagsprofil ud fra de cocktails du har tilføjet.",
+    "tags": {
+      "taste1": "Tropisk",
+      "taste2": "Sød",
+      "taste3": "Frisk",
+      "taste4": "Bitter"
+    },
+    "login": {
+      "title": "Lås op for flere <span>gratis</span> fordele ved appen",
+      "body": "Opret en bruger for at få en profil. Det er gratis og tager 1 minut. Opret smagsprofil, få ekslusive tilbud, gem cocktails og meget mere.",
+      "mainbtn": "Log ind"
+    },
+    "likesEmptyState": "Du har ingen gemte cocktails endnu 😥",
+    "showMoreBtn": "Vis flere",
+    "showLessBtn": "Vis mindre"
+  },
+  "signin": {
+    "signInButtonGoogle": "Log ind",
+    "signInButtonFacebook": "Fortsæt med Facebook",
+    "successToastMsg": "Du er nu logget ind! 🍹",
+    "logoutToastMsg": "Du er logget ud. Vi vil savne dig 😥"
+  },
+  "cocktailPage": {
+    "recipeTitle": "Fremgangsmåde",
+    "carouselTitle": "Du vil sikkert kunne lide",
+    "carouselTitle2": "Flere med",
+    "addflavorBtn": "Føj til smagsprofil",
+    "copyBtnToolTip": "Tryk her for at kopiere linket til din udklipsholder 🍸",
+    "copyBtnText": "Kopier link",
+    "copyModalTitle": "Del opskrift med dine nærmeste",
+    "alert": "Linket er nu kopieret! ✨",
+    "bookmarkToast": "Du har nu gemt denne cocktail 🍹",
+    "saveBtnWide": "Gem cocktail"
+  },
+  "spinAnimation": {
+    "title": "Indlæser"
+  },
+  "categories": {
+    "popular": "Populære",
+    "welcome": "Velkomst",
+    "dinner": "Middag",
+    "hygge": "Til hyggen",
+    "party": "Til festen",
+    "romance": "Romantik",
+    "relaxing": "Afslapning",
+    "all": "Alle",
+    "newyears": "Nytårsaften",
+    "christmas": "Juleaften"
+  },
+  "filters": {
+    "titles": {
+      "events": "Begivenheder",
+      "themes": "Tema",
+      "time": "Tid",
+      "taste": "Smagsnoter",
+      "liqour": "Spiritus"
+    },
+    "taste": {
+      "fruity": "Frugtig",
+      "sweet": "Sød",
+      "sour": "Syrlig",
+      "fresh": "Frisk",
+      "strong": "Stærk",
+      "bitter": "Bitter",
+      "tropic": "Tropisk",
+      "spicy": "Krydret",
+      "salty": "Salt",
+      "dry": "Tør"
+    },
+    "ocassion": {
+      "summer": "Sommer",
+      "wedding": "Bryllup",
+      "newyears": "Nytår",
+      "birthday": "Fødselsdag",
+      "studentparty": "Studentergilde",
+      "easter": "Påske",
+      "christmas": "Jul",
+      "reception": "Reception",
+      "weekend": "Weekend"
+    },
+    "theme": {
+      "party": "Fest",
+      "hygge": "Hygge",
+      "dinner": "Middag",
+      "romance": "Romantik",
+      "apeterif": "Velkomst",
+      "relaxing": "Afslapning"
+    },
+    "liqourType": {
+      "snaps": "Snaps",
+      "vodka": "Vodka",
+      "gin": "Gin",
+      "akvavit": "Akvavit",
+      "rum": "Rom",
+      "sevablødda": "Sevablødda"
+    }
+  },
+  "drinkCard": {
+    "btnText": "Lav cocktailkort",
+    "pdfName": "OnTheRocks-CocktailKort.pdf",
+    "title": "On The Rocks Cocktails",
+    "subtitle": "Af Bornholm Spirits"
+  },
+  "tasteProfile": {
+    "title": "Tilføj til din smagsprofil",
+    "subTitle": "Føj cocktailen til din smagsprofil og dan dig et overblik over dine yndlingssmage. Tilføj eller fjern smagene nedenfor.",
+    "bottomText": "Vurder smagsbalancen og hjælp os med at forbedre vores opskrifter.",
+    "submitBtn": "Føj til smagsprofil",
+    "translations": {
+      "frugtig": "Frugtig",
+      "sød": "Sød",
+      "syrlig": "Syrlig",
+      "frisk": "Frisk",
+      "stærk": "Stærk",
+      "bitter": "Bitter",
+      "tropisk": "Tropisk",
+      "krydret": "Krydret",
+      "salt": "Salt",
+      "tør": "Tør"
+    }
+  },
+  "competition": {
+    "firstdrink": {
+      "title": "Sour Bomb",
+      "body":"Med denne drink er man sikker på at sine gæster vågner op",
+      "tagone":"Syrlig",
+      "tagtwo":"Sød"
+    },
+    "seconddrink": {
+      "title": "Jule Nisse",
+      "body":"Her får du folk i julehumør, med en frisk og sød drink",
+      "tagone":"Sød",
+      "tagtwo":"Frisk"
+    },
+    "thirddrink": {
+      "title": "Jule Maskinen",
+      "body":"Kom på et vildt eventyrligt juleeventyr",
+      "tagone":"Krydret",
+      "tagtwo":"Stærk"
+    },
+     "fourthdrink": {
+      "title": "Risalamande",
+      "body":"Så blev det endelig jul igen",
+      "tagone":"Sød",
+      "tagtwo":"Krydret"
+    },
+     "fifthdrink": {
+      "title": "Ananas mojito",
+      "body":"Nem og forfriskende ananas mojito, der passer perfekt til en varm sommerdag",
+      "tagone":"Sød",
+      "tagtwo":"Tropisk"
+    },
+    "homePage": {
+      "title": "Vind ",
+      "second": "kittet",
+      "third": " der gør din næste fest til et hit!",
+      "subTitle": "Julens cocktail er landet. Lav din egen cocktail og konkurrér om fede præmier."
+    }
+  },
+  "articleCard": {
+    "title": "Udforsk vores cocktails",
+    "teaser": "Lav et cocktailkort med dine favoritter, og bliv klar til julen og nytår."
+  },
+  "readMoreBtn": {
+    "title": "Læs mere"
+  },
+  "aboutArticle": {
+    "tag": "Hvem er vi?"
+  },
+  "addToTasteToast": {
+    "title": "Cocktail er tilføjet til din smagsprofil 🍹"
+  },
+  "tasteProfileDisplay": {
+    "emptyStateTxt": "Udforsk vores cocktails og tilføj dine favoritter til din smagsprofil 🍹"
+  },
+  "goBackBtn": "Gå tilbage"
+}
