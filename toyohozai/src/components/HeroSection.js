@@ -49,7 +49,7 @@ export default function HeroSection() {
                     autoPlay={true} 
                     loop={true} 
                     muted={true}
-                    playsInline={true} 
+                    // playsInline={true} 
                     type="video/mp4"
                 />,
                 

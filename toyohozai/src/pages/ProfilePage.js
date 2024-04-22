@@ -110,7 +110,7 @@ export default function ProfilePage() {
             autoPlay
             loop
             muted
-            playsinline
+            // playsinline
             type="video/mp4"
             className="videovideo"
           ></video>

@@ -28,7 +28,7 @@ export default function LikesPage() {
             src={video}
             loop
             autoPlay
-            playsinline
+            // playsinline
             muted
             type="video/webm"
             className="videovideo"
