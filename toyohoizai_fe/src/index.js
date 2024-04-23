@@ -1,26 +1,26 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
-// import "bootstrap/dist/css/bootstrap.css";
+// import "./index.css";
+import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-toastify/dist/ReactToastify.css";
-// import AppRouter from "./AppRouter";
+import AppRouter from "./AppRouter";
 import * as serviceWorker from "./serviceWorker";
-// import { Provider } from "react-redux";
-// import { PersistGate } from "redux-persist/integration/react";
-// import { store, persistor } from "./redux/store";
+import { Provider } from "react-redux";
+import { PersistGate } from "redux-persist/integration/react";
+import { store, persistor } from "./redux/store";
 import ReactPWAInstallProvider from "react-pwa-install";
-import App from './App';
+// import App from './App';
 
-// const App = () => {
-//   return (
-//     <Provider store={store}>
-//       <PersistGate loading={null} persistor={persistor}>
-//         <AppRouter />
-//       </PersistGate>
-//     </Provider>
-//   );
-// };
+const App = () => {
+  return (
+    <Provider store={store}>
+      <PersistGate loading={null} persistor={persistor}>
+        <AppRouter />
+      </PersistGate>
+    </Provider>
+  );
+};
 
 ReactDOM.render(
   <React.StrictMode>

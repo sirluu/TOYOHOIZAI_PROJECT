@@ -31,7 +31,7 @@ export default function AddModal(props) {
           <div className={styles.line}>
             <h5 style={{marginTop:"15px"}} >{dataLogin.name}</h5>
           </div>
-          {dataLogin.level_id===1?(<div className={styles.line} style={{justifyContent:"space-evenly", marginTop:"30px"}} >
+          {dataLogin.role_id===1?(<div className={styles.line} style={{justifyContent:"space-evenly", marginTop:"30px"}} >
             <button
               onClick={() => {
                 props.onHide();

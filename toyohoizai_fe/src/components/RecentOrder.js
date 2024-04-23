@@ -88,7 +88,7 @@ const RecentOrder = () => {
               outline: "none",
               fontSize: "13px",
             }}
-            onChange={(e) => handlePeriod(e)}>
+            onChange={(e) => handlePeriod(e)} defaultValue='123'>
             <option value='this_month'>This month</option>
             <option value='last_month'>Last month</option>
           </select>

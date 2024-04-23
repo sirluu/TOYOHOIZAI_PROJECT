@@ -112,7 +112,7 @@ export default function EditProduct(props) {
             <h6>Category</h6>
           </div>
           <div className={styles.line}>
-            <select defaultValue={props.show?category_id:null} className={styles.input} name='level_id' onChange={(e)=>setProduct({...product, category_id:e.target.value})}>
+            <select defaultValue={props.show?category_id:null} className={styles.input} name='role_id' onChange={(e)=>setProduct({...product, category_id:e.target.value})}>
               <optgroup label='Category...'>
                 <option value='1'>Khas Jawa Barat</option>
                 <option value='2'>Khas Banten</option>

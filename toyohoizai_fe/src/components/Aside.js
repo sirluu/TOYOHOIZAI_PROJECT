@@ -10,7 +10,7 @@ export default function Aside(props) {
   return (
     <div>
       {productsOrdered.length ? (
-        dataLogin.level_id === 1 ? (
+        dataLogin.role_id === 1 ? (
           <SelectItem />
         ) : (
           <OrderItem/>
@@ -18,12 +18,12 @@ export default function Aside(props) {
       ) : (
         <aside className='sidebar'>
           <img src={foodrestaurant} alt='' />
-          {dataLogin.level_id === 1 ? (
+          {dataLogin.role_id === 1 ? (
             <h5>No items selected </h5>
           ) : (
             <h5>Your Cart is Empty </h5>
           )}
-          {dataLogin.level_id === 1 ? null : (
+          {dataLogin.role_id === 1 ? null : (
             <p> Please add some items from the menu </p>
           )}
         </aside>

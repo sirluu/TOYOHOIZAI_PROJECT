@@ -74,7 +74,7 @@ export default function FilterModal(props) {
             <h6>Category</h6>
           </div>
           <div className={styles.line}>
-            <select className={styles.select} name='level_id' defaultValue={category}
+            <select className={styles.select} name='role_id' defaultValue={category}
             onChange={(e) => {
               let value= e.target.value
               setFilter({...filter,category:value})

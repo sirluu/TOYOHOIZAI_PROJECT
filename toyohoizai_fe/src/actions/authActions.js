@@ -9,8 +9,8 @@ import {
 
 export const registerUser = (userData, history) => dispatch => {
     axios
-        .post(`${process.env.REACT_APP_API_URL}/api/register`, userData)
-        .then(res => history.push(`${process.env.REACT_APP_API_URL}/api/login`))
+        .post(`${process.env.REACT_APP_API_URL}/auth/register`, userData)
+        .then(res => history.push(`${process.env.REACT_APP_API_URL}/auth/login`))
         .catch(err =>
             dispatch({
                 type: GET_ERRORS,
@@ -21,7 +21,7 @@ export const registerUser = (userData, history) => dispatch => {
 
 export const loginUser = userData => dispatch => {
     axios
-        .post(`${process.env.REACT_APP_API_URL}/api/login`, userData)
+        .post(`${process.env.REACT_APP_API_URL}/auth/login`, userData)
         .then(res => {
             const { token } = res.data;
             localStorage.setItem("jwtToken", token);

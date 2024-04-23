@@ -41,7 +41,7 @@ const authAPIReducer = (prevState = initialCart, action) => {
         statLog = 200;
         localStorage.setItem("name", action.payload.data.name);
         localStorage.setItem("user_id", action.payload.data.user_id);
-        localStorage.setItem("level_id", action.payload.data.level_id);
+        localStorage.setItem("role_id", action.payload.data.role_id);
         localStorage.setItem("token", action.payload.data.token);
         datalogin = action.payload.data;
         status = true;

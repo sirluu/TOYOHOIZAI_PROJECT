@@ -17,14 +17,13 @@ const Login = (props) => {
   const handleChange = (e) => {
     updateFormData({
       ...formData,
-      // level_id: 1,
       [e.target.name]: e.target.value,
     });
   };
   const handleSubmit = (e) => {
     e.preventDefault();
     setEmptyForm(false)
-    if(formData.username&&formData.password&&formData.level_id){
+    if(formData.email&&formData.password){
       dispatch(logoutCreator())
       dispatch(loginAPICreator(formData));
     }else{
@@ -56,11 +55,11 @@ const Login = (props) => {
                 L O G I N
               </h1>
               <div className={classes.line}>
-                <div className={classes.label}>Username</div>
+                <div className={classes.label}>Email</div>
                 <input
                   className={classes.input}
-                  type='text'
-                  name='username'
+                  type='email'
+                  name='email'
                   onChange={(e) => {
                     return handleChange(e);
                   }}
@@ -77,22 +76,7 @@ const Login = (props) => {
                   }}
                 />
               </div>
-              <div className={classes.line}>
-                <div className={classes.label}>Login as</div>
-                <select
-                  className={classes.input}
-                  name='level_id'
-                  onChange={(e) => {
-                    return handleChange(e);
-                  }}
-                  >
-                  {/* <optgroup label='Login as...'> */}
-                    <option selected="selected" disabled >Login as...</option>
-                    <option value='1'>Admin</option>
-                    <option value='2'>Cashier</option>
-                  {/* </optgroup> */}
-                </select>
-              </div>
+
               <div className={classes.linebtn}>
                 <button
                   style={{ outline: "none" }}
@@ -112,7 +96,7 @@ const Login = (props) => {
               ):null}
               {statusLogin === 500 ? (
                 <p style={{ color: "#f56438", backgroundColor: "#FFFFFF" }}>
-                  Username or password is wrong
+                  Email or password is wrong
                 </p>
               ) : (
                 <p style={{ color: "#FFFFFF", textAlign:"center" }}>

@@ -70,7 +70,7 @@ export default function BottomNav(props) {
         className={open || openCart ? styles.menu : styles.menuUnselect}
         style={{ position: "relative" }}
         onClick={() => {
-          if (dataLogin.level_id === 1) {
+          if (dataLogin.role_id === 1) {
             setOpen(!open);
             !open
               ? setPathname("drawer")
@@ -85,7 +85,7 @@ export default function BottomNav(props) {
         <img
           className={styles.iconmenu}
           style={{ outline: "none" }}
-          src={dataLogin.level_id === 1 ? selectIcon : cart}
+          src={dataLogin.role_id === 1 ? selectIcon : cart}
           alt=''
         />
         <span className={styles.quantity}>{productsOrdered.length}</span>

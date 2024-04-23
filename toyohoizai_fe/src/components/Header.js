@@ -72,7 +72,7 @@ export default function Header(props) {
           </div>
         </div>
         <div className='title-cart'>
-          {dataLogin.level_id === 1 ? (
+          {dataLogin.role_id === 1 ? (
             <h6 className='selected'>
               Selected{" "}
               <span className='quantity'>{productsOrdered.length}</span>

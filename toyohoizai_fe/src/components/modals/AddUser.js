@@ -18,7 +18,7 @@ export default function AddUser(props) {
   const handleChange = (e) => {
     updateFormData({
       ...formData,
-      level_id: 1,
+      role_id: 1,
       [e.target.name]: e.target.value,
     });
   };
@@ -96,13 +96,13 @@ export default function AddUser(props) {
 
           <div className={styles.line}>
             <div className={styles.label}>
-              <p className={styles.textlabel}>Username</p>
+              <p className={styles.textlabel}>Email</p>
             </div>
             <div className={styles.contentinput}>
               <input
                 className={styles.input}
-                type='text'
-                name='username'
+                type='email'
+                name='email'
                 onChange={(e) => handleChange(e)}
                 required
               />
@@ -149,7 +149,6 @@ export default function AddUser(props) {
                 placeholder='Type of user'
                 className={styles.input}
                 onChange={(e) => handleChange(e)}
-                name='level_id'
                 required>
                 <optgroup label='Type of user'>
                   <option value='1' selected>
