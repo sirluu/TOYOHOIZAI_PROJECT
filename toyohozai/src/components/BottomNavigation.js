@@ -1,10 +1,13 @@
 import React from 'react';
 // icons
-import { HomeIcon, BookmarkIcon, UserIcon, MagnifyingGlassIcon, PhoneIcon } from "@heroicons/react/24/outline";
+import { FaHome, FaPhoneAlt, FaUser, FaList, FaSearch } from 'react-icons/fa'; // Assuming you're using react-icons for icons
+// import { HomeIcon, BookmarkIcon, UserIcon, MagnifyingGlassIcon, PhoneIcon } from "@heroicons/react/24/outline";
+
 import { NavLink } from "react-router-dom";
 // i18n language support
 import { useTranslation } from 'react-i18next';
-// import '../components/css/BottomNavigation.css'
+
+import '../components/css/BottomNavigation.css'
 
 export default function BottomNavigation() {
     const { t } = useTranslation(); // import translations from i18n
@@ -15,36 +18,36 @@ export default function BottomNavigation() {
 
             <ul className='text-black list-none flex items-center justify-between gap-10 md:justify-center md:gap-32'>
                 <li className="h-7 w-7 cursor-pointer">
-                    <NavLink to="/" end className="flex flex-col items-center gap-1">
-                        <HomeIcon />
+                    <NavLink to="/" className="flex flex-col items-center gap-1.5">
+                        <FaHome />
                         <p className='text-xs text-primaryGray-500'>{t("bottomnav.home")}</p>
                     </NavLink>
                 </li>
 
                 <li className="h-7 w-7 cursor-pointer">
                     <NavLink to="/search" className="flex flex-col items-center gap-1.5">
-                        <MagnifyingGlassIcon />
+                        <FaSearch />
                         <p className='text-xs text-primaryGray-500'>{t("bottomnav.cocktails")}</p>
                     </NavLink>
                 </li>
-
                 <li className="h-7 w-7 cursor-pointer">
-                    <NavLink to="/demo" className="flex flex-col items-center gap-1">
-                        <PhoneIcon/>
-                        <p className=''>{t("bottomnav.home")}</p>
+                    <NavLink to="/demo" className="fab floating-icon flex flex-col items-center gap-1.5">
+                        <FaPhoneAlt />
                     </NavLink>
+                    <p className='fab-text text-xs text-primaryGray-500'>{t("bottomnav.home")}</p>
+
                 </li>
 
-                <li className="h-7 w-7 cursor-pointer ">
-                    <NavLink to="/likes" className="flex flex-col items-center gap-1">
-                        <BookmarkIcon />
+                <li className="h-7 w-7 cursor-pointer">
+                    <NavLink to="/likes" className="flex flex-col items-center gap-1.5">
+                        <FaList />
                         <p className='text-xs text-primaryGray-500'>{t("bottomnav.favourites")}</p>
                     </NavLink>
                 </li>
 
                 <li className="h-7 w-7 cursor-pointer">
-                    <NavLink to="/profile" className="flex flex-col items-center gap-1">
-                        <UserIcon  />
+                    <NavLink to="/profile" className="flex flex-col items-center gap-1.5">
+                        <FaUser />
                         <p className='text-xs text-primaryGray-500'>{t("bottomnav.profile")}</p>
                     </NavLink>
                 </li>
