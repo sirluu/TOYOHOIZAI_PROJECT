@@ -18,20 +18,20 @@ export default function BottomNavigation() {
 
             <ul className='text-black list-none flex items-center justify-between gap-10 md:justify-center md:gap-32'>
                 <li className="h-7 w-7 cursor-pointer">
-                    <NavLink to="/" className="flex flex-col items-center gap-1.5">
+                    <NavLink to="/" className="flex1 flex flex-col items-center gap-1.5">
                         <FaHome />
                         <p className='text-xs text-primaryGray-500'>{t("bottomnav.home")}</p>
                     </NavLink>
                 </li>
 
                 <li className="h-7 w-7 cursor-pointer">
-                    <NavLink to="/search" className="flex flex-col items-center gap-1.5">
+                    <NavLink to="/search" className="flex1 flex flex-col items-center gap-1.5">
                         <FaSearch />
                         <p className='text-xs text-primaryGray-500'>{t("bottomnav.cocktails")}</p>
                     </NavLink>
                 </li>
                 <li className="h-7 w-7 cursor-pointer">
-                    <NavLink to="/demo" className="fab floating-icon flex flex-col items-center gap-1.5">
+                    <NavLink to="/demo" className="fab floating-icon flex1 flex flex-col items-center gap-1.5">
                         <FaPhoneAlt />
                     </NavLink>
                     <p className='fab-text text-xs text-primaryGray-500'>{t("bottomnav.home")}</p>
@@ -39,14 +39,14 @@ export default function BottomNavigation() {
                 </li>
 
                 <li className="h-7 w-7 cursor-pointer">
-                    <NavLink to="/likes" className="flex flex-col items-center gap-1.5">
+                    <NavLink to="/likes" className="flex1 flex flex-col items-center gap-1.5">
                         <FaList />
                         <p className='text-xs text-primaryGray-500'>{t("bottomnav.favourites")}</p>
                     </NavLink>
                 </li>
 
                 <li className="h-7 w-7 cursor-pointer">
-                    <NavLink to="/profile" className="flex flex-col items-center gap-1.5">
+                    <NavLink to="/profile" className="flex1 flex flex-col items-center gap-1.5">
                         <FaUser />
                         <p className='text-xs text-primaryGray-500'>{t("bottomnav.profile")}</p>
                     </NavLink>
