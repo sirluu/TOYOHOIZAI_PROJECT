@@ -195,9 +195,117 @@ export default function CategoryCarousel() {
         {/* RUN LOADING ANIM WHILE FETCHING */}
         {isLoading && <Spinanimation />}
 
- 
+        {/* FILTER MODAL OPENS BY SETTING OPENFILTER STATE ONCLICK FILTER BTN */}
+        {openFilter && (
+          <div
+            id="filterModal"
+            className="fixed z-[9999] overflow-y-scroll overflow-x-hidden top-0 left-0 h-full w-full bg-primaryBlack px-6 pb-32 lg:px-14"
+          >
+            <div className="flex items-center justify-center mt-4">
+              <XMarkIcon
+                className="h-10 w-10 cursor-pointer hover:opacity-50 transition-all"
+                onClick={handleFilterOpen}
+              />
+            </div>
 
-  
+            {/* FILTERS FOR MODAL STARTS HERE -> imported from /lng/filters.json - HIGHLIGTING FOR THE CLICKED + FETCHED CATEGORY BY CHECKING IF THE SET STATE MATCHES THE CATEGORY*/}
+            <div className="flex flex-col gap-6 lg:gap-12 mt-14 lg:mt-28">
+              {filters.map(({ title, id, data }) => (
+                <div key={id}>
+                  <h3 className="text-xl font-medium mb-4 lg:text-2xl">{t(title)}</h3>
+                  <div className="flex flex-wrap">
+                    {data.map(({ id, title, category, query }) => (
+                      <div
+                        className="py-1 px-1 cursor-pointer"
+                        onClick={() => {
+                          handleCategory(category);
+                          handleQuery(query);
+                          handleSearchDisplay(title);
+                        }}
+                        key={id}
+                      >
+                        <button
+                          className={
+                            fetchCategory === category
+                              ? "bg-primaryYellow px-3 py-1 rounded-lg text-primaryBlack uppercase font-thin"
+                              : "border-[1px] px-3 py-1 rounded-lg uppercase font-thin"
+                          }
+                        >
+                          <h3 className="text-base font-regular">{t(title)}</h3>
+                        </button>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ))}
+
+              <div
+                className="px-6 pt-4 fixed bottom-0 left-0 w-full"
+                style={{
+                  backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 22%, rgba(0,0,0,1) 84%)`,
+                }}
+              >
+                <div className="flex gap-2 mb-7">
+                  <button
+                    onClick={() => {
+                      handleCategory(true);
+                      handleQuery("featured");
+                      handleSearchDisplay(t("categories.popular"));
+                    }} 
+                  className='w-full border-2 py-3 rounded-2xl border-primaryYellow text-primaryYellow font-regular bg-primaryBlack'>
+                    {t("searchpage.filterModalResetBtn")}
+                  </button>
+                  <button
+                    onClick={handleFilterOpen}
+                    className="w-full py-3 rounded-2xl  text-primaryBlack font-regular bg-primaryYellow"
+                  >
+                    {t("searchpage.filterModalApplyBtn")}
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* FILTER MODAL BTN AND CHANGE LAYOUT BTN */}
+        <div className="px-5 mb-4 lg:px-14">
+          <div className="flex justify-between items-center mt-14 lg:mt-32">
+            <button className="text-primaryYellow uppercase border-[1.2px] rounded-xl px-5 py-[0.2rem]">
+              <div
+                className="flex gap-1 text-sm justify-center items-center"
+                onClick={handleFilterOpen}
+              >
+                <AdjustmentsVerticalIcon className="h-6 w-6" />
+                <p>{t("searchpage.filter")}</p>
+              </div>
+            </button>
+
+            {!changeLayout && (
+              <button
+                className="items-center justify-center text-sm flex gap-1"
+                onClick={() => handleLayoutChange()}
+              >
+                <Bars4Icon className="h-6 w-6" />
+                <p className="uppercase text-primaryGray-500">
+                  {t("searchpage.list")}
+                </p>
+              </button>
+            )}
+
+            {changeLayout && (
+              <button
+                className="items-center justify-center text-sm flex gap-1"
+                onClick={() => handleLayoutChange()}
+              >
+                <Squares2X2Icon className="h-6 w-6" />
+                <p className="uppercase text-primaryGray-500">
+                  {t("searchpage.grid")}
+                </p>
+              </button>
+            )}
+          </div>
+        </div>
+
         {/* CATEGORY CAROUSEL FOR FILTERS  */}
         <Swiper
           spaceBetween={0}
@@ -272,10 +380,29 @@ export default function CategoryCarousel() {
         </Swiper>
       </div>
 
- 
+      {/* EMPTY STATE IF DATA IS EMPTY */}
+      {events.length === 0 && (
+        <div className="fadeInAnimation px-5 mt-16 font-thin text-primaryGray-500 text-center">
+          <h2 className="text-xl">
+            "{t(searchDisplay)}" {t("searchpage.resultsEmptyStateTop")}
+          </h2>
+          <p className="mt-2 text-base">
+            {t("searchpage.resultsEmptyStateBottom")}
+          </p>
+        </div>
+      )}
+
+      {/* IF RESULTS ARE SHOWN, SHOW LENGTH + TITLE FOR FETCHED QUERY + LNG SUPPORT */}
+      {events.length > 0 && (
+        <div className="fadeInAnimation px-5 mt-7 font-thin text-primaryGray-500 lg:px-14 lg:mt-10">
+          <h2 className="text-xl lg:text-2xl">
+            {events.length} {t("searchpage.resultsText")} "{t(searchDisplay)}"
+          </h2>
+        </div>
+      )}
 
       {/* IF LAYOUT IS CHANGED OR LIST CHOSEN / LAYOUT TRUE = LIST  */}
-      {!changeLayout && (
+      {changeLayout && (
         <div className="px-5 mt-7 lg:px-14">
             {events.map(({ title, id, likes, image, body, taste, liqour, first, second, third, ingredients }) => (
               <div className="md:flex md:flex-row-reverse md:justify-between md:bg-primaryGray-200 md:gap-18 lg:gap-20 md:my-12 md:rounded-2xl cursor-pointer"> 
@@ -353,7 +480,61 @@ export default function CategoryCarousel() {
         </div>
       )}
 
- 
+      {/* IF LAYOUT IS CHANGED OR DEFAULT - LAYOUT = FALSE  = GRID  */}
+      {!changeLayout && (
+        <div className="px-5 mt-7 flex flex-wrap gap-4 justify-between lg:px-14 lg:grid-cols-3 lg:gap-y-12 lg:gap-[4%] lg:justify-start cursor-pointer">
+          {events.map(({ title, id, likes, image, body, time, taste }) => (
+            <div className="fadeInAnimation h-60 max-w-[46%] md:h-96 lg:max-w-[30%] xl:max-w-[22%] lg:min-h-[500px] relative" key={id}>
+              <div className="flex justify-between font-thin absolute items-start w-full px-3 py-3 lg:px-5 lg:py-5">
+                <div className="flex items-center gap-1">
+                  <ClockIcon className="h-3 lg:h-5" />
+                  <p className="text-xs shadow-primaryBlack lg:text-base">{time} min</p>
+                </div>
+                {user && <LikeCocktail id={id} likes={likes} />}
+
+                {/* IF NO USER SHOW BOOKMARK BUTTON WITH REDIRECT TO LIKES PAGE WITH ONBOARDING */}
+                {!user && (
+                  <div className="bookmarkIcon bg-primaryBlack bg-opacity-60 rounded-full px-2 py-2 shadow-primaryBlack shadow-2xl">
+                    <BookmarkIcon
+                      className="h-7 w-7 text-primaryYellow shadow-2xl"
+                      style={{
+                        cursor: "pointer",
+                      }}
+                      onClick={() => navigate("/likes")}
+                    />
+                  </div>
+                )}
+              </div>
+
+              <div
+                className="flex w-full justify-end flex-col h-full rounded-2xl px-4 py-4 lg:px-5 lg:py-5"
+                style={{
+                  backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0) 30%, rgba(0,0,0,1) 100%), url(${image?.srcMin})`,
+                  backgroundPosition: "center",
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                }}
+                onClick={() => navigate("/recipe/" + id)}
+              >
+                <div>
+                  <div className="flex flex-col gap-1">
+                    <div className="flex text-xs font-regular lg:text-sm">
+                      <p className="border-[1px] px-4 py-1 rounded-xl uppercase">
+                        {taste?.title}
+                      </p>
+                    </div>
+
+                    <h3 className="text-base font-medium lg:text-2xl lg:mt-3">{title}</h3>
+                    <p className="line-clamp-1 text-xs font-regular text-primaryGray-500 lg:line-clamp-2 lg:leading-normal lg:text-base">
+                      {body}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
     </section>
   );
 }

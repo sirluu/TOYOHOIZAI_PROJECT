@@ -6,3 +6,18 @@
 .mt-20 {
     margin-top: 1rem;
 }
+
+.fab {
+    border-radius: 50%;
+    background-color: #274cf1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 22px;
+    color: #fff;
+    position: absolute;
+    transform: translate(2px, -60%);
+  }

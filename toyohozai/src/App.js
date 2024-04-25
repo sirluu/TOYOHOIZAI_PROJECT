@@ -15,15 +15,17 @@ import ArticlesPage from "./pages/ArticlesPage";
 import CompetitionPage from "./pages/CompetitionPage";
 import Footer from "./components/Footer";
 import AgeConfirmed from "./components/AgeConfirmed";
+import Demo from "./pages/Demo";
 
 function App() {
   return (
     <div className="App111">
-      {/* <ScrollToTop />
+      <ScrollToTop />
       <AgeConfirmed />
-      <TopNavigation /> */}
+      <TopNavigation />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/demo" element={<Demo />} />
         <Route path="/search" element={<SearchPage />} />
         <Route path="/likes" element={<LikesPage />} />
         <Route path="/profile" element={<ProfilePage />} />

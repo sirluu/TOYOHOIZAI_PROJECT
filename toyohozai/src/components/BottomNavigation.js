@@ -1,10 +1,10 @@
 import React from 'react';
 // icons
-import { HomeIcon, BookmarkIcon, UserIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
+import { HomeIcon, BookmarkIcon, UserIcon, MagnifyingGlassIcon, PhoneIcon } from "@heroicons/react/24/outline";
 import { NavLink } from "react-router-dom";
 // i18n language support
 import { useTranslation } from 'react-i18next';
-import '../components/css/BottomNavigation.css'
+// import '../components/css/BottomNavigation.css'
 
 export default function BottomNavigation() {
     const { t } = useTranslation(); // import translations from i18n
@@ -25,6 +25,13 @@ export default function BottomNavigation() {
                     <NavLink to="/search" className="flex flex-col items-center gap-1.5">
                         <MagnifyingGlassIcon />
                         <p className='text-xs text-primaryGray-500'>{t("bottomnav.cocktails")}</p>
+                    </NavLink>
+                </li>
+
+                <li className="h-7 w-7 cursor-pointer">
+                    <NavLink to="/demo" className="flex flex-col items-center gap-1">
+                        <PhoneIcon/>
+                        <p className=''>{t("bottomnav.home")}</p>
                     </NavLink>
                 </li>
 
