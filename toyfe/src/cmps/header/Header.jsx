@@ -1,13 +1,13 @@
-import { Logo } from '../../assets/imgs/Logo'
-import { InputFilter } from './InputFilter'
+// import { Logo } from '../../assets/imgs/Logo'
+// import { InputFilter } from './InputFilter'
 import { Nav } from './Nav'
 
 export function Header() {
   return (
-    <header className="header ">
+    <header className="header">
       <div className="container">
-        <Logo />
-        <InputFilter />
+        {/* <Logo /> */}
+        {/* <InputFilter /> */}
         <Nav />
       </div>
     </header>

@@ -1,9 +1,9 @@
-.header {
+.footer {
   background-color: rgb(255, 255, 255);
   left: 0;
   position: fixed;
-  top: 0;
-  height: 70px;
+  bottom: 0;
+  height: 80px;
   width: 100%;
   z-index: 100;
   border-bottom: 1px solid #00000014;
@@ -28,7 +28,7 @@
 }
 
 @media (max-width: 945px) {
-  .header {
+  .footer {
     padding: 0 10px;
     .container {
     }
@@ -39,7 +39,7 @@
   }
 }
 @media (max-width: 460px) {
-  .header {
+  .footer {
     .container {
     }
 

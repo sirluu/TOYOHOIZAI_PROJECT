@@ -51,7 +51,7 @@ export const PostPreview = ({ post }) => {
   const onSharePost = async () => {
     const shareData = {
       title: 'Post',
-      text: 'a post from Travelsdin',
+      text: 'a post from Toyohozai',
       url: `/main/post/${post.userId}/${post._id}`,
     }
 
@@ -96,7 +96,7 @@ export const PostPreview = ({ post }) => {
   }
 
   function copyToClipBoard() {
-    const postUrl = `https://travelsdin-express-production.up.railway.app/#/main/post/${post.userId}/${post._id}`
+    const postUrl = `https://localhost:3000/#/main/post/${post.userId}/${post._id}`
     /* Copy the text inside the text field */
     navigator.clipboard.writeText(postUrl)
     // alert('Copied the text: ' + postUrl)

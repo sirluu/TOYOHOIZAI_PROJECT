@@ -128,8 +128,8 @@ export const Signup = () => {
               }}
             >
               {signin
-                ? ' New to Travelsdin? Join now'
-                : 'Already on Travelsdin? Sign in'}
+                ? ' New to Toyohozai? Join now'
+                : 'Already on Toyohozai? Sign in'}
             </a>
           </p>
         </div>

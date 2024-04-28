@@ -4,7 +4,7 @@ export function Logo() {
   const history = useHistory()
   return (
     <section className="logo" onClick={() => history.push(`/`)}>
-      <span>T</span>
+      <span>Toyohozai</span>
     </section>
   )
 }

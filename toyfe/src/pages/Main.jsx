@@ -1,5 +1,7 @@
 import { lazy, Suspense } from 'react'
 import { Header } from '../cmps/header/Header'
+import { Footer } from '../cmps/footer/Footer'
+
 import { Switch } from 'react-router-dom'
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
@@ -149,6 +151,8 @@ export function Main() {
           <PrivateRoute path="/main/connections" component={Connections} />
         </Switch>
       </Suspense>
+      <Footer/>
     </div>
+   
   )
 }

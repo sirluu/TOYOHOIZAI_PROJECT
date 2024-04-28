@@ -45,6 +45,8 @@ import {
   faCaretDown,
   faCopy,
   faArrowRightFromBracket,
+  faPhone,
+  faList
 } from '@fortawesome/free-solid-svg-icons'
 
 library.add(
@@ -83,7 +85,9 @@ library.add(
   faCommentDots,
   faCaretDown,
   faCopy,
-  faArrowRightFromBracket
+  faArrowRightFromBracket,
+  faPhone,
+  faList
 )
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
